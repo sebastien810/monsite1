@@ -579,7 +579,39 @@ button:hover {
     color: white;
     padding: 4rem 2rem;
   }
-  
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .service-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-buttons .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .service-card {
+      width: 90%;
+    }
+  }
+    
   .container-services,
   .testimonials {
     max-width: 1200px;
@@ -805,51 +837,58 @@ html {
         </div>
     </div>
 </section>
-    <section id="services">
+  <section id="services">
   <h1>Mes services</h1>
   <p>Je propose une gamme complète de services de design graphique pour répondre à tous vos besoins visuels.</p>
   <div class="underline"></div>
+
+  <div class="services-container">
+
     <div class="service-card">
       <i class="fas fa-pen-nib"></i>
       <h1>Design de logo</h1>
-      <p>Création de logos uniques et mémorables qui représentent parfaitement votre marque et captent l’attention de votre public cible</p>
+      <p>Création de logos uniques et mémorables qui représentent parfaitement votre marque.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn">En savoir plus</a>
-     </div>
-    
+      </div>
+    </div>
+
     <div class="service-card">
       <i class="fas fa-pen-nib"></i>
       <h1>Médias Sociaux</h1>
-      <p>Conception de visuels attrayants pour vos plateformes sociales qui augmentent l’engagement et renforcent votre présence en ligne </p>
+      <p>Conception de visuels attrayants pour les réseaux sociaux.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn">En savoir plus</a>
-     </div>
+      </div>
+    </div>
 
-      <div class="service-card">
+    <div class="service-card">
       <i class="fas fa-desktop"></i>
       <h1>Supports Imprimés</h1>
-      <p>Création de brochures, flyers, cartes de vites et autre supports imprimés qui communiquent efficacement votre message</p>
+      <p>Brochures, flyers, cartes de visite, etc.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn">En savoir plus</a>
-     </div>
+      </div>
+    </div>
 
-      <div class="service-card">
-      <i class="fas fa-desktop"></i>
+    <div class="service-card">
+      <i class="fas fa-lightbulb"></i>
       <h1>Design Web</h1>
-      <p>Conception d'interfaces web attrayants et fonctionnelles qui offrent une experience utilisateur optimale et convertissent les visiteurs</p>
+      <p>Interfaces web modernes et fonctionnelles.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn">En savoir plus</a>
-     </div>
-          
-      <div class="service-card">
-      <i class="fas fa-desktop"></i>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-video"></i>
       <h1>Contenus Vidéos</h1>
-      <p>Création d' intros, outros, animations, mockups et autres élèments visuels pour vos contenus vidéos qui captent l'attention de votre audience</p>
+      <p>Intros, outros, animations, mockups pour vidéos.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn">En savoir plus</a>
-     </div>
-    
-    <!-- Ajoute ici les autres services de la même façon -->
+      </div>
+    </div>
+
   </div>
 </section>
 
