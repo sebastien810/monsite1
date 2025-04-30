@@ -15,7 +15,98 @@
         header, section {
             padding: 4rem 2rem;
         }
+/* === CSS Responsive pour ton site === */
 
+/* 1. Réglages globaux */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+h1, h2, h3, p {
+  margin: 10px 0;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: #000;
+  margin: 10px 0 30px;
+}
+
+/* 2. Grilles */
+.portfolio-gallery,
+.services-grid,
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* 3. Boutons portfolio */
+.portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* 4. Responsive Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .portfolio-buttons button {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding: 10px;
+  }
+  .portfolio-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+        
         .hero {
             display: flex;
             justify-content: center;
